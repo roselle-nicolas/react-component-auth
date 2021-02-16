@@ -5,6 +5,7 @@ import Auth from './pages/auth/auth';
 
 const App: FunctionComponent = () => {
 
+  //detection du click dans l'aplication (pour fermet le menu déroulant par exemple)
   const handleClick = (event: MouseEvent) => {
     
     const sideNav = document.querySelector('.side-nav');

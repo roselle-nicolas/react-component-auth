@@ -1,5 +1,13 @@
 .side-nav {
+    transition: 400ms ease-in-out;
     &--reveal {
         transform: translateX(0);
+        transition: 400ms ease-in-out;
     }
 }
+
+
+    .nav-title {
+        padding: 0 !important;
+        margin-left: 2rem;
+    }

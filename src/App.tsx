@@ -27,6 +27,7 @@ const App: FunctionComponent = () => {
     <div className="App" onClick={(event) => handleClick(event)}>
       <Router>
         <Switch>
+          <Route exact path="/" component={Auth} />
           <Route exact path="/auth" component={Auth} />
         </Switch>
       </Router>

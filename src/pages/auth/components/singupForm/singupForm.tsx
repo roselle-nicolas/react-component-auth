@@ -1,5 +1,7 @@
 import { FunctionComponent, useState } from "react";
 import { SingupFormType } from "./type/singup-type";
+//scss
+import './singForm.scss'; 
 
 
 
@@ -39,7 +41,7 @@ const SingupForm: FunctionComponent = () => {
                         <label htmlFor="icon_prefix  white-text">Password</label>
                     </div>
                     <div className="center-align valign-weapper validate">
-                        <button className="btn waves-effect waves-light red" type="submit" name="action">Submit
+                        <button className="btn waves-effect waves-light" type="submit" name="action">Submit
                             <i className="material-icons right">send</i>
                         </button>
                     </div>

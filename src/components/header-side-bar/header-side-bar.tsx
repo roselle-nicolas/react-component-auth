@@ -1,6 +1,8 @@
 import { FunctionComponent } from "react";
 import './header-side-bar.scss';
 import HeaderSideBarModel from "./models/header-side-bar";
+//scss
+import '../../sass/utils/_color.scss';
 
 const slideMenu = () => {
     const sideNav = document.querySelector('.side-nav');

@@ -29,6 +29,8 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+ajouter: "homepage": "https://myroselle.fr/papersbank" dans le fichier package.json avant de taper la commande npm run buildn
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**

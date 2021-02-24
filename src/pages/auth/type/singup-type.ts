@@ -4,8 +4,9 @@ type Field = {
     isValid?: boolean
 }
 
-export type SingupFormType = {
-    pseudo: Field,
-    email: Field,
+export type AuthFormType = {
+    username?: Field,
+    pseudo?: Field,
+    email?: Field,
     password: Field
 }

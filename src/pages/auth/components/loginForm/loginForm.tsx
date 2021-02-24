@@ -1,15 +1,9 @@
 import { FunctionComponent, useState } from "react";
 import { AuthFormType } from "../../type/singup-type";
 
-
-
-
-
-const SingupForm: FunctionComponent = () => {
-
-    const[singupForm, setSingupForn] = useState<AuthFormType>({
-        pseudo: {value: "", error: "", isValid: false},
-        email: {value: "", error: "", isValid: false},
+const LoginForm: FunctionComponent = () => {
+    const[loginForm, setSingupForn] = useState<AuthFormType>({
+        username: {value: "", error: "", isValid: false},
         password: {value: "", error: "", isValid: false}
     });
 
@@ -17,7 +11,7 @@ const SingupForm: FunctionComponent = () => {
         const inputName: string = event.target.name;
         const inputValue: string = event.target.value;
         const newInputValue = { [inputName]: {value: inputValue, error: "", isValid: false} }
-        setSingupForn({...singupForm, ...newInputValue});
+        setSingupForn({...loginForm, ...newInputValue});
     }
 
     return(
@@ -26,17 +20,12 @@ const SingupForm: FunctionComponent = () => {
                 <form>
                     <div className="input-field">
                         <i className="material-icons prefix">account_box</i>
-                        <input type="text" className="validate" white-text name="pseudo" id="icon_prefix" value={singupForm.pseudo?.value} onChange={(event) => handleInputChange(event)} autoComplete="off" />
-                        <label htmlFor="icon_prefix  white-text">Pseudo</label>
-                    </div>
-                    <div className="input-field">
-                        <i className="material-icons prefix">email</i>
-                        <input type="email" className="validate" name="email" id="icon_prefix" value={singupForm.email?.value} onChange={(event) => handleInputChange(event)} autoComplete="off" />
-                        <label htmlFor="icon_prefix  white-text">Email</label>
+                        <input type="text" className="validate" name="username" id="icon_prefix" value={loginForm.email?.value} onChange={(event) => handleInputChange(event)} autoComplete="off" />
+                        <label htmlFor="icon_prefix  white-text">identifiant</label>
                     </div>
                     <div className="input-field">
                         <i className="material-icons prefix">enhanced_encryption</i>
-                        <input type="password" className="validate" name="password" id="icon_prefix" value={singupForm.password.value} onChange={(event) => handleInputChange(event)} autoComplete="off" />
+                        <input type="password" className="validate" name="password" id="icon_prefix" value={loginForm.password.value} onChange={(event) => handleInputChange(event)} autoComplete="off" />
                         <label htmlFor="icon_prefix  white-text">Mot de passe</label>
                     </div>
                     <div className="center-align valign-weapper validate">
@@ -50,4 +39,4 @@ const SingupForm: FunctionComponent = () => {
     )
 }
 
-export default SingupForm;
+export default LoginForm;

@@ -22,7 +22,17 @@ nav {
 }
 
 
-    .nav-title {
-        padding: 0 !important;
-        margin-left: 2rem;
-    }
+.nav-title {
+    padding: 0 !important;
+    margin-left: 2rem;
+}
+
+.LinkSingup {
+    line-height: initial;
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+    color: $secondary-color;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}

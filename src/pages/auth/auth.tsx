@@ -5,17 +5,12 @@ import SingupForm from "./components/singupForm/singupForm";
 //scss
 import './auth.scss';
 //static
-import Img from './build-a-file.jpg'
+import backgroundImg from './build-a-file.jpg'
 
 
 const headerData: HeaderSideBarModel = {
     title: "Authetification",
     showMenu: false
-}
-
-const test = {
-    backgroundImage: `url(${Img})`,
-    backgroundSize:  "cover"
 }
 
 const Auth: FunctionComponent = () => {
@@ -24,7 +19,6 @@ const Auth: FunctionComponent = () => {
         <Fragment>
             <HeaderSideBar headerData={headerData}/>
             <section className="auth-section">
-                {/* <img src={img}/> */}
                 <SingupForm />
             </section>
         </Fragment>

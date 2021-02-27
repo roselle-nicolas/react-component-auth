@@ -7,7 +7,7 @@ import LoginForm from "./components/loginForm/loginForm";
 //scss
 import './auth.scss';
 //static
-import backgroundImg from './build-a-file.jpg'
+import  './connection.jpg';
 
 
 const headerData: HeaderSideBarModel = {
@@ -18,6 +18,7 @@ const headerData: HeaderSideBarModel = {
 
 const Auth: FunctionComponent = () => {
 
+    
     const[isloginPage, setIsloginPage] = useState<boolean>(true);
 
     const showSinupForm = () => {

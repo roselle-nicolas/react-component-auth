@@ -2,7 +2,7 @@
 
 .auth-section {
     height: 100%;
-    background-image: url(https://images.pexels.com/photos/276502/pexels-photo-276502.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-image: url('./connection.jpg');
     background-size: cover;
     background-position: center;
 
@@ -20,6 +20,7 @@
 .container {
     margin-top: 8vh;
     max-width: 600px;
+    
 }
 
 .card-panel {
@@ -49,11 +50,17 @@ label {
 .btn {
     background-color: $secondary-color;
     color: #000;
+    &--disabled {
+        // background-color: $primary-color-dack;
+        // color: #fff;
+        opacity: 0.2;
+        filter: blur(1px);
+    }
 }
 
 input {
     color: white;
-    &:focus {
+    &:focus:not(.valid) {
         border-bottom: 1px solid $secondary-color;
     }
 }

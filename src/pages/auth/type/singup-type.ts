@@ -1,12 +1,7 @@
-type Field = {
-    value?: string,
-    error?: string,
-    isValid?: boolean
-}
+import { Field } from './field-form';
 
-export type AuthFormType = {
-    username?: Field,
-    pseudo?: Field,
-    email?: Field,
+export type SingupFormType = {
+    pseudo: Field,
+    email: Field,
     password: Field
 }

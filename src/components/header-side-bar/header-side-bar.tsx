@@ -26,7 +26,7 @@ const HeaderSideBar: FunctionComponent<Props> = ({headerData, showSinupForm}) =>
         // text conexion ou inscription
         const linkSingup = document.querySelector('.LinkSingup');
         if (linkSingup !== null) {
-            linkSingup.textContent==='inscription'? linkSingup.textContent = 'connexion' : linkSingup.textContent = 'inscription';
+            linkSingup.textContent==='Inscription'? linkSingup.textContent = 'connexion' : linkSingup.textContent = 'Inscription';
         }
         //
         showSinupForm();

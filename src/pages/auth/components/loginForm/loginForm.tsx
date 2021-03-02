@@ -6,6 +6,7 @@ import TestInputReponseType from "../../type/test-input-response-type";
 import testInput from "../../helpers/input-test-regex";
 import inputValidStyle from "../../helpers/input-valid-style";
 import inputTestValidate from "../../helpers/input-test-validate";
+import AlertInputInvalid from "../../helpers/alert-input-invalid";
 
 
 
@@ -49,7 +50,7 @@ const LoginForm: FunctionComponent = () => {
                         <input type="text" name="username" id="icon_prefix" value={loginForm.username?.value} onChange={(event) => handleInputChange(event)} autoComplete="off" required />
                         {
                             !loginForm.username.isValid && loginForm.username.value !== "" &&
-                            <i className="material-icons prefix help-icon">live_help</i>
+                            <i className="material-icons prefix help-icon" onClick={() => AlertInputInvalid(loginForm.username.error)}>live_help</i>
                         }
                         <label htmlFor="icon_prefix  white-text">identifiant</label>
                     </div>
@@ -58,7 +59,7 @@ const LoginForm: FunctionComponent = () => {
                         <input type="password" name="password" id="icon_prefix" value={loginForm.password.value} onChange={(event) => handleInputChange(event)} autoComplete="off" required />
                         {
                             !loginForm.password.isValid && loginForm.password.value !== "" &&
-                            <i className="material-icons prefix help-icon">live_help</i>
+                            <i className="material-icons prefix help-icon" onClick={() => AlertInputInvalid(loginForm.password.error)}>live_help</i>
                         }
                         <label htmlFor="icon_prefix  white-text">Mot de passe</label>
                     </div>

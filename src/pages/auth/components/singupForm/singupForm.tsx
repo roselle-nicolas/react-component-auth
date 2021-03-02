@@ -1,4 +1,5 @@
 import { FunctionComponent, useState } from "react";
+import inputTestValidate from "../../helpers/input-test-validate";
 import { SingupFormType } from "../../type/singup-type";
 
 
@@ -14,9 +15,9 @@ const SingupForm: FunctionComponent = () => {
     });
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const inputName: string = event.target.name;
-        const inputValue: string = event.target.value;
-        const newInputValue = { [inputName]: {value: inputValue, error: "", isValid: false} }
+        // revoie des informations de validité de la valeur de l'input
+        const newInputValue = inputTestValidate(event);
+        // enregistre les changements dans le state
         setSingupForn({...singupForm, ...newInputValue});
     }
 

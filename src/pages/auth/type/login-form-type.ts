@@ -1,6 +1,8 @@
 import { Field } from './field-form';
 
-export type LoginFormType = {
+type LoginFormType = {
     username: Field,
     password: Field
 }
+
+export default LoginFormType;

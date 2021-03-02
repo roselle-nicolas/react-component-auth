@@ -1,4 +1,4 @@
-import TestInputReponse from "../type/test-input-response";
+import TestInputReponse from "../type/test-input-response-type";
 
 const inputValidStyle = (inputTest: TestInputReponse | null, inputElm: Element | null) => {
 

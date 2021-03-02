@@ -1,4 +1,4 @@
-import TestInputReponse from '../type/test-input-response'
+import TestInputReponse from '../type/test-input-response-type'
 import regexInputSelected from './regex-list'
 
 const testInput = (inputName: string, InputValue: string): TestInputReponse | null=> {
@@ -17,4 +17,4 @@ const testInput = (inputName: string, InputValue: string): TestInputReponse | nu
     }
 }
 
-export {testInput};
+export default testInput;

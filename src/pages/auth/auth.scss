@@ -41,11 +41,16 @@ label {
 .input-field{
     i{
         color: $primary-color-dack;
+        &.help-icon {
+            right: -1rem;
+            color: $secondary-color;
+        }
         &.active {
             color: $secondary-color;
         }
     }
 } 
+
 
 .btn {
     background-color: $secondary-color;
@@ -64,3 +69,4 @@ input {
         border-bottom: 1px solid $secondary-color;
     }
 }
+

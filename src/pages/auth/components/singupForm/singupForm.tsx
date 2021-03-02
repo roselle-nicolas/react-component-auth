@@ -38,16 +38,28 @@ const SingupForm: FunctionComponent = () => {
                     <div className="input-field">
                         <i className="material-icons prefix">account_box</i>
                         <input type="text" white-text name="pseudo" id="icon_prefix" value={singupForm.pseudo?.value} onChange={(event) => handleInputChange(event)} autoComplete="off" required />
+                        {
+                            !singupForm.pseudo.isValid && singupForm.pseudo.value !== "" &&
+                            <i className="material-icons prefix help-icon">live_help</i>
+                        }
                         <label htmlFor="icon_prefix  white-text">Pseudo</label>
                     </div>
                     <div className="input-field">
                         <i className="material-icons prefix">email</i>
                         <input type="email" name="email" id="icon_prefix" value={singupForm.email?.value} onChange={(event) => handleInputChange(event)} autoComplete="off" required />
+                        {
+                            !singupForm.email.isValid && singupForm.email.value !== "" &&
+                            <i className="material-icons prefix help-icon">live_help</i>
+                        }
                         <label htmlFor="icon_prefix  white-text">Email</label>
                     </div>
                     <div className="input-field">
                         <i className="material-icons prefix">enhanced_encryption</i>
                         <input type="password" name="password" id="icon_prefix" value={singupForm.password.value} onChange={(event) => handleInputChange(event)} autoComplete="off" required />
+                        {
+                            !singupForm.password.isValid && singupForm.password.value !== "" &&
+                            <i className="material-icons prefix help-icon">live_help</i>
+                        }
                         <label htmlFor="icon_prefix  white-text">Mot de passe</label>
                     </div>
                     <div className="center-align valign-weapper validate">

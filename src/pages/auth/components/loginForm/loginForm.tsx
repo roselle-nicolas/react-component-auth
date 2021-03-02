@@ -47,11 +47,19 @@ const LoginForm: FunctionComponent = () => {
                     <div className="input-field">
                         <i className="material-icons prefix">account_box</i>
                         <input type="text" name="username" id="icon_prefix" value={loginForm.username?.value} onChange={(event) => handleInputChange(event)} autoComplete="off" required />
+                        {
+                            !loginForm.username.isValid && loginForm.username.value !== "" &&
+                            <i className="material-icons prefix help-icon">live_help</i>
+                        }
                         <label htmlFor="icon_prefix  white-text">identifiant</label>
                     </div>
                     <div className="input-field">
                         <i className="material-icons prefix">enhanced_encryption</i>
                         <input type="password" name="password" id="icon_prefix" value={loginForm.password.value} onChange={(event) => handleInputChange(event)} autoComplete="off" required />
+                        {
+                            !loginForm.password.isValid && loginForm.password.value !== "" &&
+                            <i className="material-icons prefix help-icon">live_help</i>
+                        }
                         <label htmlFor="icon_prefix  white-text">Mot de passe</label>
                     </div>
                     <div className="center-align valign-weapper validate">

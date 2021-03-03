@@ -34,5 +34,8 @@ nav {
     right: .3rem;
     color: $secondary-color;
     cursor: pointer;
-    margin-bottom: 2rem;
+    margin: 0 1rem 2rem 0;
+    &:hover {
+        text-decoration: underline;
+    }
 }

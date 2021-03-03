@@ -36,7 +36,7 @@ const Auth: FunctionComponent = () => {
                     : <SingupForm />
                 };
                 
-                <p className="help-message">Pour améliorer la sécurité de ce site, certaines restrictions sont en vigueur. Cliquez sur cette icône <i className="material-icons prefix help-icon">live_help</i> quand elle apparaît pour vous aider.</p>
+                <p className="help-message">Pour améliorer la sécurité de ce site, certaines restrictions sont en vigueur. Cliquez sur cette icône <i className="material-icons prefix help-icon help-icon--disabled">live_help</i> quand elle apparaît pour vous aider.</p>
             </section>
         </Fragment>
 

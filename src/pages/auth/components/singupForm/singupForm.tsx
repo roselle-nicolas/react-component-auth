@@ -41,7 +41,7 @@ const SingupForm: FunctionComponent = () => {
                         <input type="text" white-text name="pseudo" id="icon_prefix" value={singupForm.pseudo?.value} onChange={(event) => handleInputChange(event)} autoComplete="off" required />
                         {
                             !singupForm.pseudo.isValid && singupForm.pseudo.value !== "" &&
-                            <i className="material-icons prefix help-icon" onClick={() => AlertInputInvalid(singupForm.pseudo.error)}>live_help</i>
+                            <i className="material-icons prefix help-icon" onClick={() => AlertInputInvalid(singupForm.pseudo, "pseudo")}>live_help</i>
                         }
                         <label htmlFor="icon_prefix  white-text">Pseudo</label>
                     </div>
@@ -50,7 +50,7 @@ const SingupForm: FunctionComponent = () => {
                         <input type="email" name="email" id="icon_prefix" value={singupForm.email?.value} onChange={(event) => handleInputChange(event)} autoComplete="off" required />
                         {
                             !singupForm.email.isValid && singupForm.email.value !== "" &&
-                            <i className="material-icons prefix help-icon" onClick={() => AlertInputInvalid(singupForm.email.error)}>live_help</i>
+                            <i className="material-icons prefix help-icon" onClick={() => AlertInputInvalid(singupForm.email, "email")}>live_help</i>
                         }
                         <label htmlFor="icon_prefix  white-text">Email</label>
                     </div>
@@ -59,7 +59,7 @@ const SingupForm: FunctionComponent = () => {
                         <input type="password" name="password" id="icon_prefix" value={singupForm.password.value} onChange={(event) => handleInputChange(event)} autoComplete="off" required />
                         {
                             !singupForm.password.isValid && singupForm.password.value !== "" &&
-                            <i className="material-icons prefix help-icon" onClick={() => AlertInputInvalid(singupForm.password.error)}>live_help</i>
+                            <i className="material-icons prefix help-icon" onClick={() => AlertInputInvalid(singupForm.password, "mot de passe")}>live_help</i>
                         }
                         <label htmlFor="icon_prefix  white-text">Mot de passe</label>
                     </div>

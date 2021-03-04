@@ -17,7 +17,6 @@ const App: FunctionComponent = () => {
       sideNav?.classList.remove('side-nav--reveal')
     }
     
-
   }
 
   return (

@@ -13,11 +13,8 @@ const App: FunctionComponent = () => {
     const isClickOnSideNav = (event.target as Element).classList.contains('side-nav');
     const isClickOnbuttonCommapse = (event.target as Element).classList.contains('icon-menu');
     
-    if (!isClickOnSideNav) {
-      //a vérifier !!!
-      if (!isClickOnbuttonCommapse && !isClickOnbuttonCommapse) {
-        sideNav?.classList.remove('side-nav--reveal')
-      }
+    if (!isClickOnbuttonCommapse && !isClickOnbuttonCommapse) {
+      sideNav?.classList.remove('side-nav--reveal')
     }
     
 
